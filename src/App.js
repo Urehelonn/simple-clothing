@@ -4,7 +4,7 @@ import './App.css';
 
 import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component';
-import PreviewCollection from './pages/preview-collection/preview-collection.component';
+import PreviewCollection from './components/preview-collection/preview-collection.component';
 
 const HatsPage = () => (
     <div>
@@ -17,7 +17,8 @@ function App() {
         <div>
             <Route exact path="/" component={HomePage}></Route>
             <Route path="/shop" component={ShopPage}></Route>
-            <Route path="/collection-preview" component={PreviewCollection}></Route>
+            <Route path="/hats" component={HatsPage}></Route>
+            {/* <Route path="/collection-preview" component={PreviewCollection}></Route> */}
         </div>
     );
 }
